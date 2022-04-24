@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cocktail Project</h1>
+        <div class="search-and-filter flex">
+            <div class="yes-or-no flex">
+                <label for="radio">Use search Button:</label>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="radio">
+                <label for="no">No</label>
+                 <input type="radio" id="no" name="radio">
+            </div>
+            <div class="search flex">
+                <input type="text" id="input">
+                <button id="btn">Search</button>
+            </div>
+            <div class="filter flex">
+                <p class="choice">All</p>
+                <p class="choice">Cocktail</p>
+                <p class="choice">Shot</p>
+                <p class="choice">Ordinary Drink</p>
+                <p class="choice">Coffee / Tea</p>
+                <p class="choice">Other/Unknown</p>
+            </div>
+        </div>
+
+        <div class="cocktails flex">
+        </div>
+        </div>
+    <script type='module' src="script.js"></script>
+</body>
+
+</html>
