@@ -35,13 +35,18 @@ input.addEventListener('keydown', (evt)=>{
 })
 
 printElements(cocktails)
-
-choice.forEach(el => {
-    el.addEventListener('click', (event)=>{
-        cocktailsWrapper.innerHTML = ''
-        printElements(filterObjects(cocktails, event.target.innerText))
+    
+    choice.forEach(el => {
+        el.addEventListener('click', (event)=>{
+            cocktailsWrapper.innerHTML = ''
+            printElements(filterObjects(cocktails, event.target.innerText))
+            for(let elTwo of el.parentNode.children){
+                elTwo.classList.remove('active')
+            }
+            event.target.classList.add('active')
+        })
     })
-})
+
 
 function findObject(arr, name){
      return arr.filter(obj => obj.strDrink === name)

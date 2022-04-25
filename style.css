@@ -87,11 +87,18 @@ input, button{
     bottom: -10px;
 }
 
-.d-none{
-    display: none;
-}
 
 img{
     width: 100%;
     border-radius: 5px;
+}
+
+.d-none{
+    display: none;
+}
+
+.active{
+    color: rgb(41, 41, 255);
+    background-color: aqua;
+    font-size: large;
 }
